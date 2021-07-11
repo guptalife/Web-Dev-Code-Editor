@@ -1,0 +1,61 @@
+
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 100px;
+   // text-align: center;
+}
+
+.flex-container{
+    color: white;
+    display: flex;
+    border: 2px solid red;
+    max-width: 100%;
+    background-color: black;
+}
+
+ .editor{
+    border: 5px solid black;
+    flex-grow: 1;
+    width:33%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink:1;
+   // margin: 10px;
+ }
+
+.editorcollapsed{
+     border: 5px solid black;
+     flex-grow: 0;
+    //  position: absolue;
+    //  overflow: hidden;
+  // position: absolute;
+  overflow: hidden !important;
+}
+.editorcollapsed .CodeMirror-scroll {
+    position: absolute;
+    overflow: hidden !important;
+  }
+.CodeMirror {
+    min-height: 400px;
+    height: 100% ;
+  }
+  .CodeMirror-wrap pre {
+    word-break: break-word;
+}
+  .Web{
+      width: 100%;
+  }
+  .editor-title{
+      display: flex;
+      justify-content: space-between;
+  }
+  .start{
+      display: flex;
+      justify-content: center;
+  }
+  .start h1{
+      font-size: 2.5vw;
+      font-weight: bold;
+  }
